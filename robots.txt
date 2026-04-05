@@ -1,5 +1,5 @@
 # robots.txt for MindBurst
-# https://yourusername.github.io/mindburst/
+# https://rozanak007-png.github.io/mindburst/
 
 User-agent: *
 Allow: /
@@ -10,4 +10,4 @@ Allow: /
 User-agent: Googlebot-Image
 Allow: /
 
-Sitemap: https://yourusername.github.io/mindburst/sitemap.xml
+Sitemap: https://rozanak007-png.github.io/mindburst/sitemap.xml
