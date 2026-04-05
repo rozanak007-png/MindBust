@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — MindBurst Mental Wellness</title>
+<meta name="description" content="Get in touch with MindBurst. Send us a message, report an issue, or share feedback about our free mental wellness tools.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yourusername.github.io/mindburst/contact.html">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--coral:#FF6B6B;--peach:#FFB347;--sage:#6BCB77;--cream:#FFF8F0;--dark:#2D1B00;--muted:#8B7355;--sun:#F5A623;}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,248,240,0.96);backdrop-filter:blur(12px);padding:0.9rem 2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(245,166,35,0.2);}
+.logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;background:linear-gradient(135deg,var(--coral),var(--sun));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none;}
+.nav-links{display:flex;gap:1.25rem;list-style:none;flex-wrap:wrap;}
+.nav-links a{text-decoration:none;color:var(--muted);font-weight:500;font-size:0.82rem;transition:color 0.2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--coral);}
+.hero-inner{background:linear-gradient(160deg,#FFF0E8 0%,#FFF8F0 60%,#E8F4FF 100%);padding:8rem 2rem 4rem;text-align:center;}
+.hero-inner h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:900;margin-bottom:1rem;}
+.hero-inner p{max-width:520px;margin:0 auto;color:var(--muted);font-size:1.05rem;line-height:1.8;}
+.badge{display:inline-block;background:linear-gradient(135deg,var(--coral),var(--peach));color:white;border-radius:50px;padding:0.4rem 1.2rem;font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.25rem;}
+.main-section{padding:4rem 2rem;}
+.container{max-width:900px;margin:0 auto;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start;}
+@media(max-width:700px){.contact-grid{grid-template-columns:1fr;}}
+.form-card{background:white;border-radius:24px;padding:2.5rem;box-shadow:0 8px 40px rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.05);}
+.form-card h2{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:1.5rem;}
+.form-group{margin-bottom:1.25rem;}
+.form-label{font-size:0.85rem;font-weight:600;display:block;margin-bottom:0.4rem;color:var(--muted);}
+.form-input{width:100%;padding:0.8rem 1rem;border-radius:10px;border:1.5px solid #E8E0D5;font-size:0.95rem;font-family:'DM Sans',sans-serif;outline:none;background:var(--cream);color:var(--dark);transition:border-color 0.2s;}
+.form-input:focus{border-color:var(--coral);background:white;}
+.form-select{width:100%;padding:0.8rem 1rem;border-radius:10px;border:1.5px solid #E8E0D5;font-size:0.95rem;font-family:'DM Sans',sans-serif;outline:none;background:var(--cream);color:var(--dark);cursor:pointer;}
+.form-select:focus{border-color:var(--coral);}
+.btn-submit{width:100%;padding:1rem;border-radius:50px;border:none;background:linear-gradient(135deg,var(--coral),var(--peach));color:white;font-size:1rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.25s;margin-top:0.5rem;}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(255,107,107,0.35);}
+.success-msg{background:linear-gradient(135deg,#E8F8EE,#F0FFF5);border:2px solid var(--sage);border-radius:14px;padding:1.25rem;text-align:center;margin-top:1rem;display:none;}
+.success-msg p{margin:0;color:#1A6B35;font-weight:600;}
+.info-side h2{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:1.5rem;}
+.info-card{background:white;border-radius:18px;padding:1.5rem;border:1px solid rgba(0,0,0,0.05);margin-bottom:1rem;display:flex;align-items:flex-start;gap:1rem;}
+.info-icon{font-size:1.75rem;flex-shrink:0;margin-top:0.1rem;}
+.info-content h4{font-weight:700;margin-bottom:0.25rem;font-size:0.95rem;}
+.info-content p{color:var(--muted);font-size:0.875rem;margin:0;line-height:1.6;}
+.info-content a{color:var(--coral);text-decoration:none;}
+.crisis-alert{background:linear-gradient(135deg,#FFF5F5,#FFE8E8);border:2px solid rgba(255,107,107,0.35);border-radius:18px;padding:1.5rem;margin-top:1.5rem;}
+.crisis-alert h4{font-weight:700;color:var(--coral);margin-bottom:0.5rem;}
+.crisis-alert p{color:var(--muted);font-size:0.875rem;line-height:1.6;margin-bottom:0.75rem;}
+.crisis-alert ul{margin:0 0 0 1rem;}
+.crisis-alert li{font-size:0.875rem;color:var(--dark);line-height:1.8;font-weight:600;}
+.faq-section{padding:4rem 2rem;background:white;}
+.faq-title{font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:2rem;text-align:center;}
+.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;}
+.faq-card{background:var(--cream);border-radius:16px;padding:1.5rem;border:1px solid rgba(245,166,35,0.2);}
+.faq-q{font-weight:700;margin-bottom:0.5rem;font-size:0.95rem;}
+.faq-a{color:var(--muted);font-size:0.875rem;line-height:1.6;}
+footer{background:var(--dark);color:rgba(255,255,255,0.6);padding:2.5rem 2rem;font-size:0.85rem;}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;align-items:center;}
+.footer-logo{font-family:'Playfair Display',serif;color:white;font-size:1.1rem;}
+.footer-links{display:flex;gap:1.5rem;flex-wrap:wrap;}
+.footer-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.82rem;transition:color 0.2s;}
+.footer-links a:hover{color:var(--peach);}
+.footer-copy{max-width:1100px;margin:1.5rem auto 0;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.8rem;text-align:center;}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">MindBurst 🌅</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#quiz-section">Quiz</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="privacy-policy.html">Privacy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+</nav>
+
+<div class="hero-inner">
+  <span class="badge">📬 Get in Touch</span>
+  <h1>We Would Love to<br>Hear From You</h1>
+  <p>Have a question, suggestion, or feedback about MindBurst? Send us a message and we will respond within 1–2 business days.</p>
+</div>
+
+<section class="main-section">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- FORM -->
+      <div class="form-card">
+        <h2>Send Us a Message</h2>
+        <div class="form-group">
+          <label class="form-label">Your Full Name *</label>
+          <input type="text" id="f-name" class="form-input" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address *</label>
+          <input type="email" id="f-email" class="form-input" placeholder="Enter your email address">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject *</label>
+          <select id="f-subject" class="form-select">
+            <option value="">Select a subject...</option>
+            <option value="general">General Question</option>
+            <option value="feedback">Feedback / Suggestion</option>
+            <option value="bug">Report a Bug</option>
+            <option value="privacy">Privacy Concern</option>
+            <option value="partnership">Partnership / Collaboration</option>
+            <option value="media">Media / Press Enquiry</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Your Message *</label>
+          <textarea id="f-message" class="form-input" rows="5" placeholder="Write your message here. Please include as much detail as possible..."></textarea>
+        </div>
+        <button class="btn-submit" onclick="submitForm()">Send Message 📤</button>
+        <div class="success-msg" id="success-msg">
+          <p>✅ Thank you! Your message has been sent. We will get back to you within 1–2 business days.</p>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="info-side">
+        <h2>Other Ways to Reach Us</h2>
+        <div class="info-card">
+          <div class="info-icon">📧</div>
+          <div class="info-content">
+            <h4>Email Address</h4>
+            <p><a href="mailto:your@email.com">your@email.com</a><br>We respond within 1–2 business days.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🌐</div>
+          <div class="info-content">
+            <h4>Our Website</h4>
+            <p><a href="index.html">yourusername.github.io/mindburst</a><br>All tools are free to use anytime.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <div class="info-content">
+            <h4>Location</h4>
+            <p>Based in Sri Lanka 🇱🇰<br>Serving users worldwide.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">⏰</div>
+          <div class="info-content">
+            <h4>Response Time</h4>
+            <p>We typically respond to all messages within <strong>1–2 business days</strong>. Privacy requests: within 30 days.</p>
+          </div>
+        </div>
+
+        <div class="crisis-alert">
+          <h4>🆘 Mental Health Emergency?</h4>
+          <p>If you are in immediate danger or experiencing a mental health crisis, please <strong>do not wait</strong> for an email response. Call one of these free 24/7 helplines right now:</p>
+          <ul>
+            <li>iCall (India): 9152987821</li>
+            <li>Vandrevala Foundation: 1860-2662-345</li>
+            <li>NIMHANS Helpline: 080-46110007</li>
+            <li>International: befrienders.org</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    <div class="faq-grid">
+      <div class="faq-card">
+        <div class="faq-q">Is MindBurst completely free?</div>
+        <div class="faq-a">Yes, 100%. All tools on MindBurst — the quiz, spin wheel, mood tracker, and tips — are completely free with no sign-up required.</div>
+      </div>
+      <div class="faq-card">
+        <div class="faq-q">Are my quiz answers stored or shared?</div>
+        <div class="faq-a">No. Your quiz responses are processed entirely in your browser and are never sent to our servers. We do not store any of your health data.</div>
+      </div>
+      <div class="faq-card">
+        <div class="faq-q">Is the depression quiz a real clinical tool?</div>
+        <div class="faq-a">Our quiz is based on the PHQ-9, which is the standard clinical depression screening tool. However, our version is for informational use only and is not a clinical diagnosis.</div>
+      </div>
+      <div class="faq-card">
+        <div class="faq-q">Can I use MindBurst instead of seeing a therapist?</div>
+        <div class="faq-a">No. MindBurst is a wellness support tool, not a replacement for professional care. If you are struggling, please reach out to a licensed mental health professional.</div>
+      </div>
+      <div class="faq-card">
+        <div class="faq-q">How do I report a bug or technical issue?</div>
+        <div class="faq-a">Use the contact form above and select "Report a Bug". Please describe what happened, what browser you are using, and what you expected to happen.</div>
+      </div>
+      <div class="faq-card">
+        <div class="faq-q">Can I share MindBurst with others?</div>
+        <div class="faq-a">Absolutely! We encourage you to share MindBurst with anyone who might benefit. The more people we can help, the better.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">MindBurst 🌅</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2025 MindBurst. All rights reserved. &nbsp;|&nbsp; Not a substitute for professional medical advice.</div>
+</footer>
+
+<script>
+function submitForm(){
+  const name=document.getElementById('f-name').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const subject=document.getElementById('f-subject').value;
+  const message=document.getElementById('f-message').value.trim();
+  if(!name||!email||!subject||!message){alert('Please fill in all required fields.');return;}
+  if(!email.includes('@')){alert('Please enter a valid email address.');return;}
+  document.getElementById('success-msg').style.display='block';
+  document.getElementById('f-name').value='';
+  document.getElementById('f-email').value='';
+  document.getElementById('f-subject').value='';
+  document.getElementById('f-message').value='';
+  document.getElementById('success-msg').scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>

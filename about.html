@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — MindBurst Mental Wellness Platform</title>
+<meta name="description" content="Learn about MindBurst — our mission to make mental wellness support free and accessible to everyone. Discover our story, our tools, and our commitment to your wellbeing.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yourusername.github.io/mindburst/about.html">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--coral:#FF6B6B;--peach:#FFB347;--sage:#6BCB77;--cream:#FFF8F0;--dark:#2D1B00;--muted:#8B7355;--sun:#F5A623;}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,248,240,0.96);backdrop-filter:blur(12px);padding:0.9rem 2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(245,166,35,0.2);}
+.logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;background:linear-gradient(135deg,var(--coral),var(--sun));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none;}
+.nav-links{display:flex;gap:1.25rem;list-style:none;flex-wrap:wrap;}
+.nav-links a{text-decoration:none;color:var(--muted);font-weight:500;font-size:0.82rem;transition:color 0.2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--coral);}
+.hero-inner{background:linear-gradient(160deg,#FFF0E8 0%,#FFF8F0 60%,#E8F4FF 100%);padding:8rem 2rem 5rem;text-align:center;}
+.hero-inner h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:900;margin-bottom:1rem;}
+.hero-inner h1 em{font-style:italic;color:var(--coral);}
+.hero-inner p{max-width:600px;margin:0 auto;color:var(--muted);font-size:1.1rem;line-height:1.8;font-weight:300;}
+.badge{display:inline-block;background:linear-gradient(135deg,var(--coral),var(--peach));color:white;border-radius:50px;padding:0.4rem 1.2rem;font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.25rem;}
+.section{padding:5rem 2rem;}
+.container{max-width:1000px;margin:0 auto;}
+.section-label{font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--coral);margin-bottom:0.75rem;}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;margin-bottom:1.25rem;}
+p{margin-bottom:1rem;color:#4A3520;line-height:1.85;font-size:0.975rem;}
+.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-top:2rem;}
+@media(max-width:700px){.mission-grid{grid-template-columns:1fr;}}
+.mission-visual{background:linear-gradient(135deg,#FFF0E8,#E8F4FF);border-radius:24px;padding:3rem 2rem;text-align:center;}
+.mission-visual .big-emoji{font-size:5rem;margin-bottom:1rem;}
+.mission-visual h3{font-family:'Playfair Display',serif;font-size:1.6rem;margin-bottom:0.75rem;}
+.mission-visual p{color:var(--muted);font-size:0.9rem;}
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin-top:2rem;}
+.tool-card{background:white;border-radius:18px;padding:1.75rem;border:1px solid rgba(0,0,0,0.05);transition:transform 0.2s,box-shadow 0.2s;}
+.tool-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,0.08);}
+.tool-icon{font-size:2.5rem;margin-bottom:1rem;}
+.tool-title{font-weight:700;margin-bottom:0.5rem;}
+.tool-desc{color:var(--muted);font-size:0.85rem;line-height:1.6;}
+.tool-link{display:inline-block;margin-top:0.75rem;color:var(--coral);font-weight:600;font-size:0.82rem;text-decoration:none;}
+.values-section{background:white;}
+.values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin-top:2rem;}
+.value-card{background:var(--cream);border-radius:16px;padding:1.5rem;text-align:center;}
+.value-icon{font-size:2rem;margin-bottom:0.75rem;}
+.value-title{font-weight:700;margin-bottom:0.4rem;font-size:0.95rem;}
+.value-desc{color:var(--muted);font-size:0.82rem;line-height:1.5;}
+.stats-section{background:linear-gradient(135deg,#FFF0E8,#E8F4FF);}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.5rem;margin-top:2rem;}
+.stat-box{text-align:center;}
+.stat-num{font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--coral);}
+.stat-label{color:var(--muted);font-size:0.85rem;font-weight:500;margin-top:0.25rem;}
+.crisis-section{background:#2D1B00;padding:4rem 2rem;text-align:center;}
+.crisis-section h2{font-family:'Playfair Display',serif;font-size:2rem;color:white;margin-bottom:0.75rem;}
+.crisis-section p{color:rgba(255,255,255,0.7);margin-bottom:1.5rem;line-height:1.7;}
+.crisis-numbers{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;}
+.crisis-num{background:rgba(255,255,255,0.1);border:1px solid rgba(255,107,107,0.4);padding:0.6rem 1.25rem;border-radius:50px;color:#FFB347;font-weight:700;font-size:0.85rem;}
+.disclaimer-box{background:#F9F6F1;border-left:4px solid var(--peach);border-radius:8px;padding:1.25rem 1.5rem;margin:2rem 0;}
+.disclaimer-box p{margin:0;font-size:0.875rem;color:var(--muted);line-height:1.7;}
+.btn{padding:0.8rem 2rem;border-radius:50px;font-weight:600;font-size:0.9rem;cursor:pointer;transition:all 0.25s;text-decoration:none;display:inline-block;}
+.btn-primary{background:linear-gradient(135deg,var(--coral),var(--peach));color:white;box-shadow:0 8px 25px rgba(255,107,107,0.35);}
+.btn-primary:hover{transform:translateY(-2px);}
+a{color:var(--coral);text-decoration:none;}
+footer{background:var(--dark);color:rgba(255,255,255,0.6);padding:2.5rem 2rem;font-size:0.85rem;}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;align-items:center;}
+.footer-logo{font-family:'Playfair Display',serif;color:white;font-size:1.1rem;}
+.footer-links{display:flex;gap:1.5rem;flex-wrap:wrap;}
+.footer-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.82rem;transition:color 0.2s;}
+.footer-links a:hover{color:var(--peach);}
+.footer-copy{max-width:1100px;margin:1.5rem auto 0;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.8rem;text-align:center;}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">MindBurst 🌅</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#quiz-section">Quiz</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="privacy-policy.html">Privacy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+</nav>
+
+<div class="hero-inner">
+  <span class="badge">💛 Our Story</span>
+  <h1>Built for Everyone<br>Fighting an <em>Inner Storm</em></h1>
+  <p>MindBurst was created with one simple belief: everyone deserves accessible, friendly, and judgment-free mental health support — no cost, no barriers, no stigma.</p>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="mission-grid">
+      <div>
+        <p class="section-label">🎯 Our Mission</p>
+        <h2 class="section-title">Making Mental Wellness Accessible to All</h2>
+        <p>Mental health struggles affect hundreds of millions of people worldwide, yet access to professional support remains limited for many due to cost, availability, or stigma. MindBurst was created to bridge that gap.</p>
+        <p>We provide free, interactive tools that help people understand their mood, take small positive actions each day, and find clear pathways to professional help when needed — all in a warm, welcoming environment.</p>
+        <p>We believe that healing starts with a single moment of awareness, and awareness can start with something as simple as a quiz or a spin of a wheel.</p>
+        <div style="margin-top:1.5rem;">
+          <a href="index.html#quiz-section" class="btn btn-primary">Take the Free Quiz →</a>
+        </div>
+      </div>
+      <div class="mission-visual">
+        <div class="big-emoji">🌅</div>
+        <h3>Every Day is a New Sunrise</h3>
+        <p>No matter how dark last night felt, there is always a new morning. MindBurst is here to help you find the light.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:white;padding-top:4rem;">
+  <div class="container">
+    <p class="section-label">🛠️ Our Tools</p>
+    <h2 class="section-title">What MindBurst Offers</h2>
+    <p style="max-width:600px;">Each tool on MindBurst is designed with care, based on established psychology and mental health research.</p>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="tool-icon">🎡</div>
+        <div class="tool-title">Spin Wheel of Joy</div>
+        <div class="tool-desc">12 mood-boosting activities chosen based on behavioral activation therapy. Spin to get your next uplifting action.</div>
+        <a href="index.html#wheel-section" class="tool-link">Try the wheel →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">📋</div>
+        <div class="tool-title">PHQ-9 Depression Quiz</div>
+        <div class="tool-desc">The Patient Health Questionnaire-9 is the gold-standard clinical tool for depression screening. We have adapted it for easy, private use.</div>
+        <a href="index.html#quiz-section" class="tool-link">Take the quiz →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">📊</div>
+        <div class="tool-title">Personalized Solutions</div>
+        <div class="tool-desc">Based on your quiz score, we provide tailored guidance — from simple habits to professional resources, matched to your current level.</div>
+        <a href="index.html#quiz-section" class="tool-link">See your plan →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">💡</div>
+        <div class="tool-title">Science-Backed Daily Tips</div>
+        <div class="tool-desc">Eight evidence-based habits drawn from neuroscience and peer-reviewed clinical research — practical changes you can start today.</div>
+        <a href="index.html#tips-section" class="tool-link">See the tips →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">📊</div>
+        <div class="tool-title">Daily Mood Tracker</div>
+        <div class="tool-desc">Log how you feel throughout the day. Noticing emotional patterns is the first step toward understanding and improving your mental health.</div>
+        <a href="index.html#mood-section" class="tool-link">Start tracking →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🆘</div>
+        <div class="tool-title">Crisis Resources</div>
+        <div class="tool-desc">24/7 helpline numbers are always visible on every results page. Nobody who comes to MindBurst in crisis will leave without a path to help.</div>
+        <a href="contact.html" class="tool-link">Contact us →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="values-section section">
+  <div class="container">
+    <p class="section-label">❤️ Our Values</p>
+    <h2 class="section-title">What We Stand For</h2>
+    <div class="values-grid">
+      <div class="value-card"><div class="value-icon">🔓</div><div class="value-title">Always Free</div><div class="value-desc">Every tool on MindBurst is completely free. Mental health support should never be a luxury.</div></div>
+      <div class="value-card"><div class="value-icon">🔒</div><div class="value-title">Private & Safe</div><div class="value-desc">Your quiz answers stay in your browser. We never store your health data on our servers.</div></div>
+      <div class="value-card"><div class="value-icon">🧪</div><div class="value-title">Science-Based</div><div class="value-desc">All our tools and tips are grounded in peer-reviewed research and clinical standards.</div></div>
+      <div class="value-card"><div class="value-icon">🌍</div><div class="value-title">Inclusive</div><div class="value-desc">Mental health struggles do not discriminate. Neither do we. MindBurst is for everyone.</div></div>
+      <div class="value-card"><div class="value-icon">🤝</div><div class="value-title">Non-Judgmental</div><div class="value-desc">There is no shame in struggling. We create a safe, warm space free of stigma or judgment.</div></div>
+      <div class="value-card"><div class="value-icon">📣</div><div class="value-title">Pro-Professional</div><div class="value-desc">We actively encourage users to seek professional help. We supplement, never replace, expert care.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-section section">
+  <div class="container" style="text-align:center;">
+    <p class="section-label">📈 MindBurst By the Numbers</p>
+    <h2 class="section-title">Making a Difference</h2>
+    <div class="stats-grid" style="margin-top:2rem;">
+      <div class="stat-box"><div class="stat-num">12</div><div class="stat-label">Mood-Boosting Activities</div></div>
+      <div class="stat-box"><div class="stat-num">9</div><div class="stat-label">PHQ-9 Quiz Questions</div></div>
+      <div class="stat-box"><div class="stat-num">8</div><div class="stat-label">Science-Backed Daily Tips</div></div>
+      <div class="stat-box"><div class="stat-num">4</div><div class="stat-label">Result Levels with Solutions</div></div>
+      <div class="stat-box"><div class="stat-num">24/7</div><div class="stat-label">Crisis Helplines Listed</div></div>
+      <div class="stat-box"><div class="stat-num">100%</div><div class="stat-label">Free, Always</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="crisis-section">
+  <div style="max-width:700px;margin:0 auto;">
+    <h2>🆘 You Are Never Alone</h2>
+    <p>If you are experiencing a mental health crisis right now, please reach out immediately. These helplines are staffed 24 hours a day, 7 days a week.</p>
+    <div class="crisis-numbers">
+      <span class="crisis-num">📞 iCall: 9152987821</span>
+      <span class="crisis-num">📞 Vandrevala: 1860-2662-345</span>
+      <span class="crisis-num">📞 NIMHANS: 080-46110007</span>
+      <span class="crisis-num">🌐 befrienders.org</span>
+    </div>
+  </div>
+</div>
+
+<section class="section" style="background:var(--cream);">
+  <div class="container" style="max-width:720px;text-align:center;">
+    <p class="section-label">⚠️ Important Disclaimer</p>
+    <h2 class="section-title" style="font-size:1.8rem;">MindBurst Is a Support Tool, Not a Medical Provider</h2>
+    <div class="disclaimer-box" style="text-align:left;">
+      <p>MindBurst is designed as a free wellness support platform. It is <strong>not a medical service, clinical practice, or emergency resource</strong>. All content, quizzes, tips, and tools are for general informational and educational purposes only.</p>
+      <p>Results from our PHQ-9 quiz are <strong>not a clinical diagnosis</strong>. Please always consult with a qualified mental health professional or physician regarding any concerns about your mental health. Do not delay or disregard professional advice because of something you have read or used on this website.</p>
+    </div>
+    <div style="margin-top:2rem;">
+      <a href="disclaimer.html" style="color:var(--coral);font-weight:600;font-size:0.9rem;">Read Full Disclaimer →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">MindBurst 🌅</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2025 MindBurst. All rights reserved. &nbsp;|&nbsp; Not a substitute for professional medical advice.</div>
+</footer>
+</body>
+</html>

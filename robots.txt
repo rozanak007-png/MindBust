@@ -1,0 +1,13 @@
+# robots.txt for MindBurst
+# https://yourusername.github.io/mindburst/
+
+User-agent: *
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+Sitemap: https://yourusername.github.io/mindburst/sitemap.xml
