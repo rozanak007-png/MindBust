@@ -10,4 +10,4 @@ Allow: /
 User-agent: Googlebot-Image
 Allow: /
 
-Sitemap: https://github.com/rozanak007-png/MindBust/blob/main/sitemap.xml
+Sitemap: https://github.com/rozanak007-png/MindBust/blob/834ce09e530e016cc1dc1535193d39fe8138b2e3/sitemap.xml
