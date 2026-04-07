@@ -1,13 +1,4 @@
-# robots.txt for MindBurst
-# https://rozanak007-png.github.io/mindburst/
-
 User-agent: *
 Allow: /
 
-User-agent: Mediapartners-Google
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /
-
-Sitemap: Sitemap: https://rozanak007-png.github.io/MindBurst-webiste/sitemap.xml
+Sitemap: https://rozanak007-png.github.io/MindBust/sitemap.xml
