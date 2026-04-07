@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://rozanak007-png.github.io/MindBust/sitemap.xml
